@@ -1,0 +1,62 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  color: #FFF;
+  background: #333;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 1050px;
+  overflow: auto;
+  margin: 20px auto;
+}
+
+.slider-inner {
+  width: 1000px;  /* Set width and height to match images */
+  height: 700px;  /* Set width and height to match images */
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 3px;
+  border: #666 solid 1px;
+}
+
+.slider-inner img {
+  display: none;  /* Want all images hidden initially */
+  width: 1000px;
+  height: 700px;
+}
+
+.slider-inner img.active {
+  display: inline-block;
+}
+
+.prev, .next {
+  float: left;
+  margin-top: 330px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.prev {
+  position: relative;
+  margin-right: -45px;
+  z-index: 100;
+}
+
+.next {
+  position: relative;
+  margin-left: -45px;
+  z-index: 100;
+}
